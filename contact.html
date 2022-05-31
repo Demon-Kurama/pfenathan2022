@@ -30,18 +30,21 @@
       </nav>
 
 
-      <div class="row align-items-center"> 
-      <div class="col-md-4" align="center"></div>
-      <div class="col-mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Adress mail :</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
-      <div class="col-mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Message :</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-      <div class="col-md-4" align="center"></div>
-    </div>
+      <form action="mailto:info@w3docs.com" method="get" enctype="text/plain">
+      <p>Nom: <input type="text" name="name" /></p>
+      <p>Email: <input type="text" name="email" /></p>
+      <p>
+        Commentaires:
+        <br />
+        <textarea name="comments" rows="12" cols="35">Envoyez votre commentaires au site Web.</textarea>
+        <br />
+      </p>
+
+      <p>
+        <input type="submit" name="submit" value="Send" />
+        <input type="reset" name="reset" value="Clear Form" />
+      </p>
+    </form>
 
 
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
