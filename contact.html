@@ -31,21 +31,29 @@
       </nav>
 
 
-      <form action="mailto:nathan.deprez@cesjb.be" method="get" enctype="text/plain">
-      <p>Nom: <input type="text" name="name" /></p>
-      <p>Email: <input type="text" name="email" /></p>
-      <p>
-        Commentaires:
-        <br />
-        <textarea name="comments" rows="12" cols="35" placeholder="Envoyez votre commentaires au site Web"></textarea>
-        <br />
-      </p>
-
-      <p>
-        <input type="submit" name="submit" value="Envoyer" />
-        <input type="reset" name="reset" value="Clear Form" />
-      </p>
-    </form>
+      <div class="container">
+        <div class="d-flex justify-content-center">
+            <div class="col-8 m-4">
+                <form action="contact.php" method="POST">
+                    <div class="form-group">
+                        <div class="text-center">
+                            <h1>Contactez-moi ! </h1>
+                        </div>
+                        <div class="d-flex">
+                            <input type="text" name="surname" placeholder="Nom" autocomplete="off" class="form-control"/>
+                            <input type="text" name="firstname" placeholder="Prénom" autocomplete="off" class="form-control"/>
+                        </div>
+                        <br/>
+                        <input type="email" name="email" placeholder="Email" autocomplete="off" class="form-control"/>
+                        <br/>
+                        <textarea rows="10" name="message" placeholder="Votre message" class="form-control"></textarea>
+                        <br/>
+                        <button type="submit" class="btn btn-lg btn-primary">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
 
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
